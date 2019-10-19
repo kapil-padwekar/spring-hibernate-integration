@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html data-ng-app="app">
+	<head>
+	<!-- Meta-Information -->
+<!-- etc… -->
+
+<!-- Vendor: Bootstrap Stylesheets http://getbootstrap.com -->
+<!-- etc… -->
+
+<!-- Our Website CSS Styles -->    
+		<link rel="stylesheet" type="text/css" href="resources/css/bootstrap/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/bootstrap/bootstrap-theme.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/angular-xeditable/xeditable.css">		
+		<title data-ng-bind="title">Customer Library</title>
+	</head>
+	<body data-ng-controller="MainController">
+<h6>{{message}}</h6>
+        <!-- Header -->
+        <div ng-include src="resources/html/partials/header.html"></div>
+		
+		<!-- Menu -->
+        <div ng-include src="resources/html/partials/menu.html"></div>
+
+        <!-- Error -->
+        <div ng-include src="resources/html/partials/error.html"></div>
+
+        <!-- PARTIALS -->
+		<div class="section">
+
+			<div data-ng-view></div>
+		</div>
+	</body>
+		<script src="resources/js/jquery/jquery.js"></script>
+		<script src="resources/js/angular/angular.js"></script>
+		<script src="resources/js/angular/angular-route.js"></script>
+		<script src="resources/js/bootstrap/bootstrap.js"></script>
+        <script src="resources/js/angular/xeditable.js"></script>
+        <script src="resources/js/angular/angular-local-storage.js"></script>
+		<script src="resources/app/app.js"></script>
+        <script src="resources/app/directives/directive.js"></script>
+		<script src="resources/app/controllers/controller.js"></script>
+		<script src="resources/app/services/service.js"></script>
+</html>
