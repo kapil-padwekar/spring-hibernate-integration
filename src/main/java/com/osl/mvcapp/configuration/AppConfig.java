@@ -40,7 +40,7 @@ import org.springframework.web.servlet.view.JstlView;
  */
 @Configuration
 @Import(HibernateConfiguration.class)
-@ComponentScan(basePackages = { "com.kapsi.mvcapp.service", "com.kapsi.mvcapp.dao", "com.kapsi.mvcapp.util" })
+@ComponentScan(basePackages = { "com.osl.mvcapp.service", "com.osl.mvcapp.dao", "com.osl.mvcapp.util" })
 public class AppConfig {
 
     @Bean
